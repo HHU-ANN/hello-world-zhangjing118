@@ -10,12 +10,12 @@ except ImportError as e:
 
 def ridge(x,y):
     a=0.5
-    x1=x.transpose()
+    x=x.transpose()
     E=np.eye(np.linalg.inv(np.dot(x,x1)))
     return np.dot(np.linalg.inv(np.dot(x,x1)+np.dot(a,E)),np.dot(x,y))
     
 def lasso(data):
-    pass
+
 
 def read_data(path='./data/exp02/'):
     x = np.load(path + 'X_train.npy')
