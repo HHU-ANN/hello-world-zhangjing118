@@ -22,8 +22,7 @@ def read_data(path='./data/exp02/'):
     y = np.load(path + 'y_train.npy')
     return x, y
 
-def main():
-    x,y=read_data()
-    weight=ridge(x,y)
-    return x,y,weight
+
+
+
 
